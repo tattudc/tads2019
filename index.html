@@ -4,10 +4,18 @@
         <title>Minha pagina web</title>
         <meta charset="utf-8">
         <style>
-            h1{
-                color: red;
-                text-align: left;
-                font-size: 30px;
+            .cabecalho-h1{
+                color: black;
+                font-size: 50px;
+            }
+            .cabecalho-p{
+                text-align: center;
+                font-size: 20px;
+            }
+            .cabecalho{
+                padding: 5px;
+                text-align: center;
+                background-color: white;
             }
             p{
                 color: black;
@@ -54,22 +62,24 @@
     <body>
         <header>
             <div class="cabecalho">
-                    <h1>TADS 2019</h1>
-                    <p>Página de notícias do curso de TADS2019</p>
+                    <h1 class="cabecalho-h1">TADS 2019</h1>
+                    <p class="cabecalho-p">Página de notícias do curso de TADS2019</p>
             </div>
             <div class="topnav">
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Home</a> <!-- Aqui linka pra home com a tag A e o comando href com o destino-->
                     <a href="disciplinas.html">Disciplinas</a>
                     <a href="agenda.html">Agenda</a>
                     <a href="contato.html">Contato</a>
             </div>
         </header>
         <tbody>
-            <h2>Disciplinas 1º semestre</h2>
-            <ul>
-                <li>Fundamentos da computação</li>
-                <li>Algoritmos</li>
-            </ul>
+            <h2>Últimas notícias</h2>
+            <h3>Notícias TADS</h3>
+            <p>Subtitulo da notícia, 6 jun 2019</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Manduma pindureta quium dia nois paga. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+            <h3>Notícias sobre tecnologia</h3>
+            <p>Subtitulo da notícia, 6 jun 2019</p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Casamentiss faiz malandris se pirulitá. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
         </tbody>
         <footer>
             <p>Desenvolvido por Tarcísio. @2019</p>

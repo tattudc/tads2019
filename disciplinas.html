@@ -1,13 +1,21 @@
 <!DOCTYPE html5>
 <html lang="pt-BR">
     <head>
-        <title>Minha pagina web</title>
+        <title>TADS EAJ - UFRN</title>
         <meta charset="utf-8">
         <style>
-            h1{
-                color: red;
-                text-align: left;
-                font-size: 30px;
+            .cabecalho-h1{
+                color: black;
+                font-size: 50px;
+            }
+            .cabecalho-p{
+                text-align: center;
+                font-size: 20px;
+            }
+            .cabecalho{
+                padding: 5px;
+                text-align: center;
+                background-color: white;
             }
             p{
                 color: black;
@@ -47,6 +55,21 @@
             .center{
                 text-align: center;
             }
+			.secao-principal{
+				float: left;
+				display: block;
+				width: 70%;
+				}
+			.menu-lateral{
+				float: left;
+				display: block;
+				width: 30%;
+				}
+			.footer{
+				float: left;
+				display: block;
+				margin-left: 35%;
+				}
         </style>
         <script type="text/javascript">
         </script>
@@ -54,24 +77,44 @@
     <body>
         <header>
             <div class="cabecalho">
-                    <h1>TADS 2019</h1>
-                    <p>Página de notícias do curso de TADS2019</p>
+                    <h1 class="cabecalho-h1">TADS 2019</h1>
+                    <p class="cabecalho-p">Página de notícias do curso de TADS2019</p>
             </div>
             <div class="topnav">
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Home</a> <!-- Aqui linka pra home com a tag A e o comando href com o destino-->
                     <a href="disciplinas.html">Disciplinas</a>
                     <a href="agenda.html">Agenda</a>
                     <a href="contato.html">Contato</a>
             </div>
         </header>
         <tbody>
-            <h2>Disciplinas 1º semestre</h2>
-            <ul>
-                <li>Fundamentos da computação</li>
-                <li>Algoritmos</li>
-            </ul>
-        </tbody>
-        <footer>
+			<div class="secao-principal">
+				<h2>Disciplinas 1º semestre</h2>
+				<ul>
+					<li>Fundamentos da computação</li>
+					<li>Algoritmo e programação</li>
+					<li>Sistemas Operacionais</li>
+					<li>Matemática Aplicada I</li>
+					<li>Raciocínio Lógico</li>
+					<li>Leitura e produção de textos</li>
+				</ul>
+				<h2>Disciplinas 2º semestre</h2>
+				<ul>
+					<li>Programação Orientada a Objetos</li>
+					<li>Processo de desenvolvimento de software</li>
+					<li>Matemática Aplicada II</li>
+					<li>Vertentes Produtivas nas Ciências Agrarias</li>
+					<li>Banco de dados</li>
+					<li>Programação Visual e Autoria Web</li>
+					<li>Redes de Computadores</li>
+				</ul>
+			</div>
+			<div class="menu-lateral">
+				<h2>Menu</h2>
+				<a href="#">Trabalhos</a>
+			</div>
+		</tbody>
+        <footer class="footer">
             <p>Desenvolvido por Tarcísio. @2019</p>
         </footer>
     </body>
